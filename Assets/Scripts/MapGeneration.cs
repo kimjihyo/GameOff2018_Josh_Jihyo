@@ -18,6 +18,7 @@ public class MapGeneration : MonoBehaviour {
 				GameObject tile = GameObject.CreatePrimitive(PrimitiveType.Quad);
 				tile.transform.position = new Vector3(x - (offSet/2), y -(offSet/2), -1);
 				tile.GetComponent<Renderer>().material = tileColor;
+                tile.transform.parent = transform;
 			}
 		}
 	}
